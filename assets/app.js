@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+
     const randomBtn = document.querySelector('#generate-btn')
     const randomBeer = document.querySelector('.random-beer')
     const descriptionDisplay = document.querySelector('.description')
-    const foodPairingDisplay = document.querySelector('.food_pairing')
-
+    const foodPairingDisplay = document.querySelector('.food-pairing')
+    
 
 
     function getData() {
-        e.preventDefault()
+        
         fetch('https://api.punkapi.com/v2/beers/random')
             .then(response => {
                 return response.json()
@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 const foodPairing = data[0].food_pairing
 
 
-                randomBeer.innerHTML = name + '' + ibu + '' + abv
+                randomBeer.innerHTML = name  + ''  +  ibu  +  ''  +  abv
                 descriptionDisplay.innerHTML = description
-                foodPairingDisplay.innerHTML = food_pairing
+                foodPairingDisplay.innerHTML = foodPairing
 
             })
     
 
-    randomBtn.addEventListener('click', getData)
+    
         }
 
-})
+
