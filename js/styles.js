@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  $('.sidenav').sidenav();  
-
+  $('.sidenav').sidenav();
   $('.slider').slider({full_width: true});
 });

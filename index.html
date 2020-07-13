@@ -15,34 +15,32 @@
 
 <body>
     <header>
-        <nav class="nav-wrapper navigation deep-orange darken-1">
-            <div class="container">
-                    <a href="#" class="brand-logo">
-                        <i class="small material-icons icons">sports_bar</i>
-                        <i class="large material-icons icons">local_dining</i>
-                        Find My Munchies
-                    </a>
-                    <a href="#" data-target="mobile-menu" class="sidenav-trigger">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#food"> Restaurants</a></li>
-                        <li><a href="#drinks">Breweries</a></li>
-                    </ul>
-                    <ul id="mobile-menu" class="sidenav grey lighten-2">
-                        <li><a href="#food"> Restaurants</a></li>
-                        <li><a href="#drinks">Breweries</a></li>
-                    </ul>
-
-            </div>    
-        </nav>
+        <nav class="deep-orange darken-1">
+            <div class="nav-wrapper container">
+              <a href="/" class="brand-logo">
+                <i class="small material-icons icons">sports_bar</i>
+                <i class="large material-icons icons">local_dining</i>
+                Find My Munchies
+            </a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#food">Restaurants</a></li>
+                <li><a href="#drink">Breweries</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="#food">Restaurants</a></li>
+            <li><a href="#drink">Breweries</a></li>
+          </ul>
     </header>
     <main>
         <section class="hero">
             <div class="slider">
                 <ul class="slides">
                   <li>
-                    <img src="./images/burger-and-beer.jpg"> <!-- random image -->
+                    <img src="./images/beer-dispenser.jpg"> <!-- random image -->
                     <div class="caption center-align">
                       <h3>This is our big Tagline!</h3>
                       <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -90,10 +88,11 @@
         </div>
       </footer>
     
-    <!-- Compiled and minified JavaScript for Materialize -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Minified JavaScript for jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
     <!--JavaScript file for styling functionality-->
     <script src="./js/styles.js"></script>
 </body>
