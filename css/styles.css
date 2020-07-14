@@ -1,4 +1,7 @@
 .navText {
-    font-size: 3.5vw;
+    font-size: 3vw;
     overflow: hidden;
 }
+.slider .indicators .indicator-item.active {
+    background-color: #f4511e;
+  }
