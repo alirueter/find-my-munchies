@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Nunito font-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--styles.css-->
@@ -72,7 +74,7 @@
             <section id="food">
                 <h2>What do you want to eat?</h2>
                 <input type="text" class="food-input" placeholder="Munchies">
-                <button type="submit" class="food-search">Find my Munchies!</button>
+                <button type="submit" class="food-search waves-effect waves-light btn deep-orange darken-1">Find my Munchies!</button>
 
                 <div class="row">
                     <p class="location-food">Location:</p>
@@ -88,11 +90,11 @@
             </section>
             
             <!--Drinks-->
-            <section id="drinks">
+            <section id="drink">
                 <h2>What do you want to drink?</h2>
                 <input type="text" class="drink-input" placeholder="Drink">
-                <button type="submit" class="drink-search">Find my Drink!</button>
-
+                <button type="submit" class="drink-search waves-effect waves-light btn deep-orange darken-1">Find my Drink!</button>
+                <!-- <a class="waves-effect waves-light btn">button</a> -->
                 <div class="row">
                     <p class="location-drink">Location:</p>
                 </div>
@@ -109,18 +111,15 @@
             <!--Random Generator-->
             <section id="random-beer-generator">
                 <div class="wrapper">
-                    <header>
-                        <h1>Beer Generator</h1>
-                    </header>
-
                     <div>
                         <h2>Find a Tasty Combo!</h2>
                     </div>
                     <div>
                         <h3 class="random-beer"></h3>
                         <div class="beer-btn">
-                            <button id="#generate-btn" type="click" onclick="getData()">Click Here for Tasty
-                                Beer!</button>
+                            <button id="#generate-btn" class="waves-effect waves-light btn deep-orange darken-1" type="click" onclick="getData()">
+                                Click Here for Tasty Beer!
+                            </button>
                         </div>
                         <div>
                             <p class="description"></p>
