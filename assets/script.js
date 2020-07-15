@@ -1,7 +1,7 @@
 var foodInput = document.getElementById("food-input").value;
 var foodSearchBtn = document.querySelector("#food-btn");
 var drinkInput = document.getElementById("drink-input").value;
-var drinkSearchBtn = document.querySelector(".drink-search");
+var drinkSearchBtn = document.querySelector("#drink-btn");
 
 //Details of search
 var restNameEl = document.querySelector("#restaurant-name")
@@ -29,12 +29,12 @@ $(foodSearchBtn).click(function () {
 
 $(drinkSearchBtn).click(function () {
     if (drinkInput === "") {
-        $(".error2").append("Field cannot be blank.");
-    } else {
-        console.log("Hey!");
-        restaurantInfo;
+        $(".modal").modal();
     }
-});
+    else {
+        breweriesInfo();
+    }
+})
 
 var restaurantInfo = function(city) {
     // format api url
