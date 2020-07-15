@@ -1,14 +1,11 @@
 .findMy {
-    font-size: 3vw;
+    font-size: 3.5vw;
     overflow: hidden;
     font-weight: 200;
     font-style: italic;
+    font-family: Nunito;
 }
-.munchies {
-    font: 2vw;
-    overflow: hidden;
-    font-weight: 300;
-}
+
 .slider .indicators .indicator-item.active {
     background-color: #f4511e;
 }
