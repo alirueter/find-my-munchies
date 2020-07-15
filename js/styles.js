@@ -1,3 +1,6 @@
 $(document).ready(function(){
-  $('.sidenav').sidenav();  
+  // mobile side navigation
+  $('.sidenav').sidenav();
+  // hero slider images
+  $('.slider').slider({full_width: true});
 });
