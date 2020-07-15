@@ -2,16 +2,15 @@ var foodInput = document.getElementById("food-input").value;
 var foodSearchBtn = document.querySelector("#food-btn");
 var drinkInput = document.getElementById("drink-input").value;
 var drinkSearchBtn = document.querySelector(".drink-search");
-var locationEl = document.querySelector("#location");
 
 //Details of search
 var foodLocation = document.querySelector(".location-food")
 var cuisine = document.querySelector(".cuisine")
 var meal = document.querySelector(".meal")
 var breweryNameEl = document.querySelector("#brewery-name")
-var drinkLocation = document.querySelector("#location")
-var drinkNumber = document.querySelector("#number")
-var breweryWebsite = document.querySelector("#website")
+var breweryLocation = document.querySelector("#b-location")
+var breweryNumber = document.querySelector("#b-number")
+var breweryWebsite = document.querySelector("#b-website")
 
 $(foodSearchBtn).click(function(){
     // what I added for modal
@@ -56,11 +55,11 @@ var breweriesInfo = function(city) {
             // append info or attach info
             var randomBrewery = Math.floor(Math.random() * (data.length - 1));
             breweryNameEl.innerHTML = data[randomBrewery].name;
-            drinkLocation.innerHTML = data[randomBrewery].street + "   " + data[0].city + ", " + data[0].state;
-            drinkNumber.innerHTML = data[randomBrewery].phone;
+            breweryLocation.innerHTML = data[randomBrewery].street + "   " + data[0].city + ", " + data[0].state;
+            breweryNumber.innerHTML = data[randomBrewery].phone;
             breweryWebsite.innerHTML = data[randomBrewery].website_url.link(data[randomBrewery].website_url);
             if (data[randomBrewery].phone === "") {
-                drinkNumber.innerHTML = "<span class='font-bold'> N/A </span>";
+                breweryNumber.innerHTML = "<span class='font-bold'> N/A </span>";
             }
 
             if (data[randomBrewery].website_url === "") {
