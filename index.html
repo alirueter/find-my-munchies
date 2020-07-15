@@ -60,7 +60,18 @@
             <section id="food">
                 <h2>What do you want to eat?</h2>
                 <input type="text" class="food-input" placeholder="Munchies">
-                <button type="submit" class="food-search">Find my Munchies!</button>
+                <button type="submit" class="food-search modal-trigger btn" data-target="modal1">Find my Munchies!</button>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <h4>Modal Header</h4>
+                      <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                  </div>
+                          
 
                 <div class="row">
                     <p class="location-food">Location:</p>

@@ -11,9 +11,8 @@ var drinkLocation = document.querySelector(".location-drink")
 var beerType = document.querySelector(".beer-type")
 var beer = document.querySelector(".beer")
 
-foodSearchBtn.on("click", function(e) {
-    e.preventDefault();
+foodSearchBtn.on("click", function() {
     if (foodInput.val() === "") {
-        
+        $(".modal").modal();
     }
 })
