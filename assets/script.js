@@ -16,15 +16,13 @@ var breweryNumber = document.querySelector("#b-number")
 var breweryWebsite = document.querySelector("#b-website")
 
 $(foodSearchBtn).click(function () {
-    // what I added for modal
-    $('.modal').modal();
-    // above works ^^
+    if (foodInput === "") {
+        $(".modal").modal();
+    }
+    else {
+        restaurantInfo();
+    }
 
-    //if (foodInput === ""){
-    //$(".error1").append("Field cannot be blank.")
-    //else {
-        //API STUFF
-    //}
 });
 
 $(drinkSearchBtn).click(function () {
