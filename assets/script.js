@@ -15,7 +15,7 @@ var breweryLocation = document.querySelector("#b-location")
 var breweryNumber = document.querySelector("#b-number")
 var breweryWebsite = document.querySelector("#b-website")
 
-$(foodSearchBtn).click(function(){
+$(foodSearchBtn).click(function () {
     // what I added for modal
     $('.modal').modal();
     // above works ^^
@@ -27,11 +27,12 @@ $(foodSearchBtn).click(function(){
     //}
 });
 
-$(drinkSearchBtn).click(function(){
+$(drinkSearchBtn).click(function () {
     if (drinkInput === "") {
-    $(".error2").append("Field cannot be blank.");
+        $(".error2").append("Field cannot be blank.");
     } else {
         console.log("Hey!");
+        restaurantInfo;
     }
 });
 
@@ -76,15 +77,15 @@ var restaurantInfo = function(city) {
         });
 };
 
-var breweriesInfo = function(city) {
+var breweriesInfo = function (city) {
     // format url
     var brewApiUrl = "https://api.openbrewerydb.org/breweries?by_city=" + city + "&per_page=50";
 
     // fetch
     fetch(brewApiUrl)
-        .then(function(response) {
+        .then(function (response) {
             return response.json();
-        }).then(function(data) {
+        }).then(function (data) {
             // append info or attach info
             var randomBrewery = Math.floor(Math.random() * (data.length - 1));
             breweryNameEl.innerHTML = data[randomBrewery].name;
