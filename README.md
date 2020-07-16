@@ -10,17 +10,18 @@ A website that empowers hungry and thirsty users to find craft bewereries and fo
 * HTML5
 * CSS3
 * JavaScript
-<!-- other languages/tech used here -->
+* jQuery
+* Materialize 
+* Api
+  * Open Brewery DB
+  * Zomato
+  * Punk Api
 
 ## Website
 <!-- add url here -->
 
 
 ## Screenshots
-<img width="1440" alt="Screen Shot 2020-07-14 at 10 08 09 AM" src="https://user-images.githubusercontent.com/65334884/87444999-1e88e400-c5bd-11ea-90c0-c0653cde9cba.png">
-<img width="1440" alt="Screen Shot 2020-07-14 at 10 08 29 AM" src="https://user-images.githubusercontent.com/65334884/87445029-2779b580-c5bd-11ea-8a5d-379f855430a6.png">
-<img width="1440" alt="Screen Shot 2020-07-14 at 10 08 36 AM" src="https://user-images.githubusercontent.com/65334884/87445038-2ba5d300-c5bd-11ea-8219-8e0fccbe73c5.png">
-<img width="1440" alt="Screen Shot 2020-07-14 at 10 08 46 AM" src="https://user-images.githubusercontent.com/65334884/87445051-319bb400-c5bd-11ea-9da1-24c280a77163.png">
 
 <!-- pic of mobile menu? -->
 <!-- pic of food page -->
