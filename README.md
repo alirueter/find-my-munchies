@@ -23,10 +23,11 @@ A website that empowers hungry and thirsty users to find craft bewereries and fo
 
 ## Screenshots
 
-<!-- pic of mobile menu? -->
-<!-- pic of food page -->
-<!-- pic of drink page -->
-<!-- pic of random generator -->
+<img width="1440" alt="Screen Shot 2020-07-16 at 5 53 54 PM" src="https://user-images.githubusercontent.com/65334884/87730760-51360680-c78e-11ea-8863-e7451b916feb.png">
+<img width="1440" alt="Screen Shot 2020-07-16 at 5 54 00 PM" src="https://user-images.githubusercontent.com/65334884/87730766-55622400-c78e-11ea-96af-3550db8c2720.png">
+<img width="1440" alt="Screen Shot 2020-07-16 at 5 52 09 PM" src="https://user-images.githubusercontent.com/65334884/87730771-5abf6e80-c78e-11ea-9028-7bb3aa80c4a6.png">
+<img width="1440" alt="Screen Shot 2020-07-16 at 5 53 01 PM" src="https://user-images.githubusercontent.com/65334884/87730799-6a3eb780-c78e-11ea-90de-759ad5393f7a.png">
+<img width="1440" alt="Screen Shot 2020-07-16 at 5 53 23 PM" src="https://user-images.githubusercontent.com/65334884/87730827-817da500-c78e-11ea-955e-fe2324af355c.png">
 
 
 ## Demo
