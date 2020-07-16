@@ -38,7 +38,7 @@ A website that empowers hungry and thirsty users to find craft bewereries and fo
 © 2020 SAAT
 
 ## Contact
-<!-- future group email to be inserted here -->
+saatllc360@yahoo.com
 
 
 
