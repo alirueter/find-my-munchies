@@ -1,13 +1,13 @@
-var foodInput = document.getElementById("food-input").value;
+var cityRestaurantSearch = document.getElementById("c-r-search")
 var foodSearchBtn = document.querySelector("#food-btn");
-var drinkInput = document.getElementById("drink-input").value;
+var cityBrewerySearch = document.getElementById("c-b-search");
 var drinkSearchBtn = document.querySelector("#drink-btn");
 
 //Details of search
 var restNameEl = document.querySelector("#restaurant-name")
 var foodLocation = document.querySelector("#r-location")
 var cuisine = document.querySelector("#cuisine")
-var meal = document.querySelector("#meal")
+var menu = document.querySelector("#menu")
 var averageCost = document.querySelector("#avg-cost")
 var foodNumber = document.querySelector("#r-number")
 var breweryNameEl = document.querySelector("#brewery-name")
@@ -15,24 +15,30 @@ var breweryLocation = document.querySelector("#b-location")
 var breweryNumber = document.querySelector("#b-number")
 var breweryWebsite = document.querySelector("#b-website")
 
+var city = cityRestaurantSearch;
+
 $(foodSearchBtn).click(function () {
-    if (foodInput === "") {
+    if (cityRestaurantSearch === null) {
         $(".modal").modal();
     }
     else {
-        restaurantInfo();
+        var city = cityRestaurantSearch.value.trim();
+        restaurantInfo(city);
     }
 
 });
 
 $(drinkSearchBtn).click(function () {
-    if (drinkInput === "") {
+    
+    if (cityBrewerySearch === null) {
         $(".modal").modal();
     }
     else {
-        breweriesInfo();
+        var city2 = cityBrewerySearch.value.trim();
+        breweriesInfo(city2);
     }
 })
+
 
 var restaurantInfo = function(city) {
     // format api url
@@ -51,8 +57,7 @@ var restaurantInfo = function(city) {
             return response.json();
         }).then(function(data) {
             
-            var cityId = data.location_suggestions[0].id;
-            var restaurantApiUrl = "https://developers.zomato.com/api/v2.1/search?entity_id=" + cityId + "&entity_type=city";
+            var restaurantApiUrl = "https://developers.zomato.com/api/v2.1/search?entity_id=" + data.location_suggestions[0].id + "&entity_type=city";
             return fetch(restaurantApiUrl, getApi);
             
         }).then(function(response) {
@@ -68,16 +73,16 @@ var restaurantInfo = function(city) {
                 restNameEl.innerHTML = data.restaurants[randomRestaurant].restaurant.name;
                 foodLocation.innerHTML = data.restaurants[randomRestaurant].restaurant.location.address;
                 cuisine.innerHTML = data.restaurants[randomRestaurant].restaurant.cuisines;
-                meal.innerHTML = linkText.link(data.restaurants[randomRestaurant].restaurant.menu_url);
+                menu.innerHTML = linkText.link(data.restaurants[randomRestaurant].restaurant.menu_url);
                 averageCost.innerHTML = data.restaurants[randomRestaurant].restaurant.average_cost_for_two;
                 foodNumber.innerHTML = data.restaurants[randomRestaurant].restaurant.phone_numbers;
             }
         });
 };
 
-var breweriesInfo = function (city) {
+var breweriesInfo = function (city2) {
     // format url
-    var brewApiUrl = "https://api.openbrewerydb.org/breweries?by_city=" + city + "&per_page=50";
+    var brewApiUrl = "https://api.openbrewerydb.org/breweries?by_city=" + city2 + "&per_page=50";
 
     // fetch
     fetch(brewApiUrl)
@@ -99,6 +104,3 @@ var breweriesInfo = function (city) {
             }
         });
 };
-
-//breweriesInfo("milwaukee");
-//restaurantInfo("milwaukee");
