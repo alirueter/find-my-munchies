@@ -15,29 +15,25 @@ var breweryLocation = document.querySelector("#b-location")
 var breweryNumber = document.querySelector("#b-number")
 var breweryWebsite = document.querySelector("#b-website")
 
-var city = cityRestaurantSearch;
-
 $(foodSearchBtn).click(function () {
-    if (cityRestaurantSearch === null) {
-        $(".modal").modal();
-    }
-    else {
+    if (cityRestaurantSearch.value === "") {
+        console.log("Hey");
+    } else {
         var city = cityRestaurantSearch.value.trim();
         restaurantInfo(city);
     }
-
 });
 
+
 $(drinkSearchBtn).click(function () {
-    
-    if (cityBrewerySearch === null) {
-        $(".modal").modal();
+    if (cityBrewerySearch.value === "") {
+        console.log("Whats Up");
     }
     else {
         var city2 = cityBrewerySearch.value.trim();
         breweriesInfo(city2);
     }
-})
+});
 
 
 var restaurantInfo = function(city) {
