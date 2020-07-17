@@ -2,6 +2,8 @@ var cityRestaurantSearch = document.getElementById("c-r-search")
 var foodSearchBtn = document.querySelector("#food-btn");
 var cityBrewerySearch = document.getElementById("c-b-search");
 var drinkSearchBtn = document.querySelector("#drink-btn");
+var errorRestaurant = document.querySelector(".error1")
+var errorBreweries = document.querySelector(".error2")
 
 //Details of search
 var restNameEl = document.querySelector("#restaurant-name")
@@ -18,7 +20,9 @@ var breweryWebsite = document.querySelector("#b-website")
 $(foodSearchBtn).click(function () {
     if (cityRestaurantSearch.value === "") {
         console.log("Hey");
+        $(errorRestaurant).append("Please enter a city.");
     } else {
+        $(errorRestaurant).empty();
         var city = cityRestaurantSearch.value.trim();
         restaurantInfo(city);
     }
@@ -28,8 +32,10 @@ $(foodSearchBtn).click(function () {
 $(drinkSearchBtn).click(function () {
     if (cityBrewerySearch.value === "") {
         console.log("Whats Up");
+        $(errorBreweries).append("Please enter a city.");
     }
     else {
+        $(errorBreweries).empty();
         var city2 = cityBrewerySearch.value.trim();
         breweriesInfo(city2);
     }
