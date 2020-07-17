@@ -2,8 +2,8 @@ var cityRestaurantSearch = document.getElementById("c-r-search")
 var foodSearchBtn = document.querySelector("#food-btn");
 var cityBrewerySearch = document.getElementById("c-b-search");
 var drinkSearchBtn = document.querySelector("#drink-btn");
-var errorRestaurant = document.querySelector(".error1")
-var errorBreweries = document.querySelector(".error2")
+var errorRestaurant = document.querySelector("#error1")
+var errorBreweries = document.querySelector("#error2")
 
 //Details of search
 var restNameEl = document.querySelector("#restaurant-name")
