@@ -1,0 +1,26 @@
+.findMy {
+    font-size: 3.5vw;
+    overflow: hidden;
+    font-weight: 200;
+    font-style: italic;
+    font-family: Nunito;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #f4511e;
+}
+h2 {
+    font-family: Nunito;
+}
+ button {
+    background-color: #f4511e;
+ }
+
+.font-bold {
+    font-weight: bold;
+}
+
+.error-message {
+    color: #f4511e;
+    font-weight: bold;
+}
