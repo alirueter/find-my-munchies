@@ -18,8 +18,7 @@ A website that empowers hungry and thirsty users to find craft bewereries and fo
   * Punk Api
 
 ## Website
-<!-- add url here -->
-
+https://alirueter.github.io/find-my-munchies/
 
 ## Screenshots
 
