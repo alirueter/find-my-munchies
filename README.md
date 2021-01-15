@@ -1,5 +1,3 @@
-![image](https://user-images.githubusercontent.com/65334884/87607910-0e0f6100-c6c4-11ea-9686-43c25102235c.png)
-Delicious Food and Brews are Waiting for You!
 # Find My Munchies
 
 ## Purpose
@@ -38,6 +36,8 @@ https://alirueter.github.io/find-my-munchies/
 
 ## Contact
 saatllc360@yahoo.com
+
+Ali Rueter: rueter.alison@gmail.com
 
 
 
